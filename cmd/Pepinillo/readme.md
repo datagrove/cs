@@ -1,23 +1,5 @@
 
 
-we have some ? namespace distinctions here.
+Gherkin Compiler for specflow
 
-```
-namespace As1.v9 {
-    class Foobar{}
-    class BadClass {}
-}
-namespace As1.V9 {
-    class BadClass{
-
-        BadClass() {
-            var x = new As1.v9.BadClass();
-
-            Foobar a;
-            As1.v9.Foobar b;
-        }
-
-    }
-}
-
-```
+Intentionally does not use C#/msbuild code generation, this is to make it easy to remove the feature files and continue with your test development. At this point you can remove the compiler as well, although you may continue to need SpecFlow if you use code from that library.
